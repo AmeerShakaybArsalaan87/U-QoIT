@@ -4,8 +4,13 @@
 - The main file is "dtnrouting.java". You can modify any part of the simulator according to your needs. 
 
 References:
+
+
 [1] Arsalaan, Ameer Shakayb, Hung Nguyen, and Mahrukh Fida. "Impact of Bushfire Dynamics on the Performance of MANETs." In 2021 16th Annual Conference on Wireless On-demand Network Systems and Services Conference (WONS), pp. 1-4. IEEE, 2021.
+
 [2] Arsalaan, Ameer Shakayb, Hung Nguyen, Andrew Coyle, and Mahrukh Fida. "Quality of information with minimum requirements for emergency communications." Ad Hoc Networks 111 (2021): 102331.
+
 [3] UAVs Relay in Emergency Communications with Strict Requirements on Quality of Information. (under review)
+
 
 Note: If you have any questions, I am pleased to answer them. Please contact me at: shakayb@uoswabi.edu.pk.
