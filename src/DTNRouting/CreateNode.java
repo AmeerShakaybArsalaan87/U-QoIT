@@ -206,9 +206,9 @@ public class CreateNode extends dtnrouting  implements  ActionListener, TextList
 							Node node=dtnrouting.theNodes.get(rand_number);
 							//node.reliability=4;
 							node.name = "D"+node.name.substring(1); //Rename it.
-							// RequirementsofDestination(node);				
+							RequirementsofDestination(node);				
 							// Identify packets needed by the destination
-							// PacketsforDestination(node);
+							PacketsforDestination(node);
 						}
 						
 					// Arrange the destinations in ascending order of ID
