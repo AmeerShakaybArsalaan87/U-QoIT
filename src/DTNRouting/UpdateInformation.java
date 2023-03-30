@@ -203,7 +203,7 @@ public void simulationSettings()
     	dtnrouting.relayNodes.clear();
     	dtnrouting.packetDelivedDestinations.clear();
     	dtnrouting.dest_statisfying_all_requirements = new int[dtnrouting.theDestinations.size()];
-    	long STARTTIME=0;
+    	//long STARTTIME=0;
     	//System.out.println("*************************");
     	//*******************************************************************************
     	//1.  FIRE IS THERE BUT NO UAV -------------------
@@ -227,7 +227,7 @@ public void simulationSettings()
  	       		{ Thread.sleep(1000);
  	       		} catch (InterruptedException ex) {}
      	    */
-    		STARTTIME= System.currentTimeMillis();
+    		//STARTTIME= System.currentTimeMillis();
     	    }// End of Sim 1
     	
 
@@ -261,7 +261,7 @@ public void simulationSettings()
         				        	dtnrouting.dest_statisfying_all_requirements[++g] = -1;
         				 			}}
 	         		 //Add UAV nodes
-        		     STARTTIME= System.currentTimeMillis();
+        		     //STARTTIME= System.currentTimeMillis();
 	         		 cnObj.CreateRandomUAV(dtnrouting.numberUAVs); 
 	         		 
         	}// End of Sim 2
@@ -309,7 +309,7 @@ public void simulationSettings()
 
   
 	         		 //Add UAV nodes----------------------------
-              		 STARTTIME= System.currentTimeMillis();
+              		 //STARTTIME= System.currentTimeMillis();
 	         		 cnObj.CreateDistanceUAV(dtnrouting.numberUAVs); 
 	         		 
         }// End of Sim 3
@@ -363,7 +363,7 @@ public void simulationSettings()
                 dtnrouting.RunForUQoIT = false;
         	    // Assign shortest path from source to destination
                 //System.out.println("CALL QoIT BEFORE UAV PLACEMENT*************************");
-                STARTTIME= System.currentTimeMillis();
+                //STARTTIME= System.currentTimeMillis();
              	pathObj.ShortestPathsSD();
              	
              	// Assign initial source node of the destination
@@ -376,9 +376,9 @@ public void simulationSettings()
          		
          }// End of Sim 4
         
-        System.out.println(dtnrouting.SIMULATION_PART +", "+ (System.currentTimeMillis()-STARTTIME));
-        simulationSettings();
-        /*
+        //System.out.println(dtnrouting.SIMULATION_PART +", "+ (System.currentTimeMillis()-STARTTIME));
+        //simulationSettings();
+        
         //Set fire radius to initial radius---------------------------------
 	    fire_loc.setRadius();        
 	    // Assign shortest path from source to destination
@@ -387,7 +387,7 @@ public void simulationSettings()
      	pathObj.pathRelays();
      	pathObj.setInitialSource();	
      	 //Run the Simulation
-     	runSimulation();*/
+     	runSimulation();
      	
      	
      	//------------------------------------------------------------------
